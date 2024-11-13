@@ -1,3 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FBF4DB;
+  }
+
 #grid-container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);

@@ -28,3 +28,16 @@
     You should be able to enter 64 and have a brand new 64x64 grid pop up without changing the total amount of pixels used.
 
 4. Push your project to GitHub!
+
+
+PALETTE
+
+
+#AA5486
+#FC8F54
+#FDE7BB
+#FBF4DB
+rgb(170, 84, 134)
+rgb(252, 143, 84)
+rgb(253, 231, 187)
+rgb(251, 244, 219)
