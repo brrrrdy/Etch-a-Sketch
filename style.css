@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -7,11 +8,13 @@ body {
     background-color: #FBF4DB;
   }
 
-#grid-container {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    gap: 2px; 
+.input-area {
+  padding: 50px;
+}
+
+  #grid-container {
+    display: flex;
+    flex-wrap: wrap;
     width: 500px; 
     height: 500px;
   }
@@ -19,4 +22,11 @@ body {
   .grid-square {
     background-color: #ccc;
     border: 1px solid #999;
+    width: calc(500px / 16);
+    height: calc(500px / 16);
+    box-sizing: border-box;
+  }
+
+  .grid-square:hover {
+    background-color: indianred;
   }
