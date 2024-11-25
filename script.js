@@ -1,15 +1,47 @@
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.getElementById('grid-container');
+  const containerSize = 500; 
 
   function createGrid(size) {
     while (container.firstChild) {
       container.removeChild(container.firstChild);
     }
+    const squareSize = containerSize / size;
+
     for (let i = 0; i < size * size; i++) {
       const div = document.createElement('div');
       div.classList.add('grid-square');
+
+      div.style.width = `${squareSize}px`;
+      div.style.height = `${squareSize}px`
+      
+      div.dataset.darkness = 0;
+
+      div.addEventListener('mouseenter', function () {
+        div.style.backgroundColor = getRandomColor();
+      });
+
       container.appendChild(div);
     }
+  }
+
+  window.setResolution = function (resolution) {
+    if (resolution === 'low') {
+      createGrid(8); 
+    } else if (resolution === 'medium') {
+      createGrid(16);
+    } else if (resolution === 'high') {
+      createGrid(32); 
+    }
+  };
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
   }
 
   createGrid(16); 

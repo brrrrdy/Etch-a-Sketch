@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #FBF4DB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
 .input-area {
@@ -25,8 +26,16 @@ body {
     width: calc(500px / 16);
     height: calc(500px / 16);
     box-sizing: border-box;
+    flex-shrink: 0;
   }
 
   .grid-square:hover {
     background-color: indianred;
   }
+
+  .grid-square.active {
+    background-color: indianred;
+  }
+
+
+

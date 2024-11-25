@@ -11,8 +11,9 @@
     <div class="input-area">
         <div id="inputArea">
             <label for="sizeInput">Enter Size of Your Sketch Area:</label>
-            <input type="number" id="sizeInput" min="1">
-            <button onclick="startSketch()">Start Sketch</button>
+            <button onclick="setResolution('low')">Low (8x8)</button>
+            <button onclick="setResolution('medium')">Medium (16x16)</button>
+            <button onclick="setResolution('high')">High (32x32)</button>
         </div>
     </div>
 <div id="grid-container">
