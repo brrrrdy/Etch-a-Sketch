@@ -12,6 +12,7 @@
 
       container.style.width = `${squareSize * size}px`;
       container.style.height = `${squareSize * size}px`;
+      const squareSize = Math.floor(containerSize / size);
 
       for (let i = 0; i < size * size; i++) {
         const div = document.createElement('div');
