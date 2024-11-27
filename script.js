@@ -1,3 +1,4 @@
+(function etchASketch () {
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.getElementById('grid-container');
   const containerSize = 500; 
@@ -14,11 +15,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
       div.style.width = `${squareSize}px`;
       div.style.height = `${squareSize}px`
-      
-      div.dataset.darkness = 0;
 
       div.addEventListener('mouseenter', function () {
         div.style.backgroundColor = getRandomColor();
+      });
+
+      div.addEventListener('touchstart', function () {
+        div.style.backgroundColor = getRandomColor ();
+      });
+
+      div.addEventListener('touchmove', function (e) {
+        const touch = e.touches[0];
+        const target = document.elementFromPoint(touch.clientX, touch.clientY);
+        if (target && target.classList.contains('grid-square')) {
+          target.style.backgroundColor = getRandomColor();
+        }
       });
 
       container.appendChild(div);
@@ -46,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   createGrid(16); 
 });
+})();
 
   /* 
 

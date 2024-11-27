@@ -29,10 +29,6 @@ body {
     flex-shrink: 0;
   }
 
-  .grid-square:hover {
-    background-color: indianred;
-  }
-
   .grid-square.active {
     background-color: indianred;
   }
