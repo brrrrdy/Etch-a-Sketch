@@ -8,7 +8,7 @@
       while (container.firstChild) {
         container.removeChild(container.firstChild);
       }
-      const squareSize = containerSize / size;
+      const squareSize = Math.floor(containerSize / size);
 
       for (let i = 0; i < size * size; i++) {
         const div = document.createElement('div');
