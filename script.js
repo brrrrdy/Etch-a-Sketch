@@ -5,31 +5,34 @@
     let isMulticolorMode = false; 
 
     function createGrid(size) {
+      // Clear existing grid items
       while (container.firstChild) {
         container.removeChild(container.firstChild);
       }
+    
+      // Calculate the new size of each square, rounding down to avoid fractional pixels
       const squareSize = Math.floor(containerSize / size);
-
+    
+      // Adjust grid container size based on the resolution
       container.style.width = `${squareSize * size}px`;
       container.style.height = `${squareSize * size}px`;
-      const squareSize = Math.floor(containerSize / size);
-
+    
       for (let i = 0; i < size * size; i++) {
         const div = document.createElement('div');
         div.classList.add('grid-square');
-
+    
         div.style.width = `${squareSize}px`;
         div.style.height = `${squareSize}px`;
-
+    
         div.addEventListener('mouseenter', function () {
           div.style.backgroundColor = isMulticolorMode ? getRandomColor() : '#000';
         });
-
+    
         div.addEventListener('touchstart', function (e) {
           e.preventDefault(); 
           div.style.backgroundColor = isMulticolorMode ? getRandomColor() : '#000';
         });
-
+    
         div.addEventListener('touchmove', function (e) {
           e.preventDefault();
           const touch = e.touches[0];
@@ -38,7 +41,7 @@
             target.style.backgroundColor = isMulticolorMode ? getRandomColor() : '#000';
           }
         });
-
+    
         container.appendChild(div);
       }
     }
