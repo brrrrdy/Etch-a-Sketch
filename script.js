@@ -1,7 +1,7 @@
 (function etchASketch() {
   document.addEventListener('DOMContentLoaded', function () {
     const container = document.getElementById('grid-container');
-    const containerSize = 700;
+    const containerSize = 500;
     let isMulticolorMode = false; 
 
     function createGrid(size) {
