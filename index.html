@@ -9,11 +9,15 @@
 </head>
 <body>
     <div class="input-area">
-        <div id="inputArea">
-            <label for="sizeInput">Enter Size of Your Sketch Area:</label>
-            <button onclick="setResolution('low')">Low (8x8)</button>
-            <button onclick="setResolution('medium')">Medium (16x16)</button>
-            <button onclick="setResolution('high')">High (32x32)</button>
+        
+            <div id="welcome">
+                <label for="sizeInput">Select Size and Mode of Your Sketch Area:</label>
+            </div>
+            <div id="inputArea">
+                <button onclick="setResolution('small')">Small (8x8)</button>
+                <button onclick="setResolution('medium')">Medium (16x16)</button>
+                <button onclick="setResolution('big')">Big (32x32)</button>
+                <button id="toggle-mode">Taste The Rainbow</button>
         </div>
     </div>
 <div id="grid-container">
