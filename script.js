@@ -5,15 +5,15 @@
     let isMulticolorMode = false; 
 
     function createGrid(size) {
-      // Clear existing grid items
+
       while (container.firstChild) {
         container.removeChild(container.firstChild);
       }
     
-      // Calculate the new size of each square, rounding down to avoid fractional pixels
+    
       const squareSize = Math.floor(containerSize / size);
     
-      // Adjust grid container size based on the resolution
+     
       container.style.width = `${squareSize * size}px`;
       container.style.height = `${squareSize * size}px`;
     
