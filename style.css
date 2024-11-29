@@ -8,6 +8,7 @@ body {
   background-color: #640D5F;
   color: #FFB200;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1rem;
 }
 
 h1 {
@@ -44,6 +45,7 @@ button {
   border: none;
   font-size: 15px;
   transition: transform 0.2s ease-in-out;
+  letter-spacing: .15rem;
 }
 
 button:hover {
