@@ -44,6 +44,7 @@ button {
   height: 50px;
   margin: 0;
   border: none;
+  border-bottom: 5px;
   font-size: 15px;
   transition: transform 0.2s ease-in-out;
   letter-spacing: .15rem;
