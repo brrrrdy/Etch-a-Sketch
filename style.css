@@ -55,10 +55,10 @@ button:hover {
 
 .buttons {
   display: flex;
+  padding-bottom: 10px;
   flex-direction: column; 
   align-items: center; 
   gap: 2px; 
-  margin-bottom: 20px; 
 }
 
 .size-buttons {
