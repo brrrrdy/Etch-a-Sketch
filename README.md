@@ -2,6 +2,18 @@
 
 ## https://brrrrdy.github.io/Etch-a-Sketch/
 
+### Sprint 1
+
+### Sprint 1 ✅
+
+- Develop functionality. 
+- Implement UI.
+
+### Sprint 2 ⌚
+
+- Refactor code once I've learned more about JavaScript (React?)
+- Integrate design with other projects
+
 ## Create a webpage with a 16x16 grid of square divs.
         
 Create the divs using JavaScript. Don’t try to create them by hand by copying and pasting them in your HTML file!
