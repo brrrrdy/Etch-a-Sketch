@@ -1,18 +1,30 @@
 body {
+  margin: 0;
   min-height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(135deg, #640D5F, #745101, #014750);
-  color: #FFB200;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #640d5f, #745101, #014750);
+  color: #ffb200;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   letter-spacing: 1rem;
 }
 
 h1 {
-font-style: italic;
+  font-style: italic;
 }
 
 .grid {
@@ -22,10 +34,9 @@ font-style: italic;
   max-height: 350px;
   min-height: 350px;
   align-items: center;
-  justify-content: center;
   margin-top: 20px;
-  border:#f5acfc;
-  background-color: #e9b4dc; 
+  border: #f5acfc;
+  background-color: #e9b4dc;
 }
 
 .box {
@@ -33,20 +44,20 @@ font-style: italic;
   height: 100%;
   width: 100%;
   border: 1px solid #ffffff56;
-  cursor: pointer; 
+  cursor: pointer;
   touch-action: none;
 }
 
 button {
-  background-color: transparent; 
-  color: #FFB200; 
+  background-color: transparent;
+  color: #ffb200;
   width: 100px;
   height: 50px;
   margin: 0;
   border: none;
   font-size: 15px;
   transition: transform 0.2s ease-in-out;
-  letter-spacing: .15rem;
+  letter-spacing: 0.15rem;
 }
 
 button:hover {
@@ -56,57 +67,235 @@ button:hover {
 .buttons {
   display: flex;
   padding-bottom: 10px;
-  flex-direction: column; 
-  align-items: center; 
-  gap: 2px; 
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .size-buttons {
   display: flex;
-  flex-direction: row; 
-  gap: 10px;  
+  flex-direction: row;
+  gap: 10px;
 }
 
 .color-buttons {
   display: flex;
-  flex-direction: row; 
-  gap: 10px; 
+  flex-direction: row;
+  gap: 10px;
 }
 
 .color {
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  background: linear-gradient(
+    to right,
+    #ef5350,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #26c6da,
+    #43a047,
+    #eeff41,
+    #f9a825,
+    #ff5722
+  );
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  color: #fff; 
-  border: none; 
+  color: #fff;
+  border: none;
   cursor: pointer;
   font-size: 12px;
 }
 
-.footer {
+/* Unified Footer */
+.unified-footer {
+  color: #ffffff;
+  padding: 1.5rem 0;
+  position: static;
+  bottom: auto;
+  width: 100%;
+  margin-top: auto;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  z-index: 1000;
+  flex-shrink: 0;
+  letter-spacing: normal;
+}
+
+.unified-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.unified-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.unified-footer-left p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.85rem;
+}
+
+.unified-footer-right-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.unified-footer-social h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.75rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.unified-social-links {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.unified-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.unified-social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.unified-social-links svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  opacity: 0.9;
+}
+
+.unified-footer-repo a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #ffb200;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.unified-footer-repo a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.unified-footer-repo svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* GitHub FAB */
+.github-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background-color: #3d3d3d;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed; 
-  bottom: 0;
-  width: 100%;
-  height: 50px; 
-  background-color: rgba(0, 0, 0, 0.7); 
-  color: #FFB200;
-  font-size: 12px;
-  letter-spacing: 0.2rem;
-}
-
-.footer a {
-  color: #FFB200;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+  z-index: 1001;
   text-decoration: none;
-  font-weight: bold;
-  margin-left: 5px;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.github-fab:hover {
+  transform: scale(1.1);
+  background-color: #555555;
+}
+
+.github-fab svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  body {
+    padding-bottom: 0;
+    padding-top: 10px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+
+  button {
+    font-size: 1.3rem;
+  }
+
+  .unified-footer {
+    position: relative;
+    margin-top: auto;
+  }
+
+  .unified-footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .unified-footer-right-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .unified-social-links {
+    justify-content: center;
+  }
+
+  .github-fab {
+    bottom: 20px;
+  }
 }
