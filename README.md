@@ -1,6 +1,6 @@
 # Etch-a-Sketch
 
-https://github.com/brrrrdy/Etch-a-Sketch
+https://brrrrdy.github.io/Etch-a-Sketch
 
 ![Etch-a-Sketch screenshot](images/scrn_etch-CiFOgRzL.webp)
 
