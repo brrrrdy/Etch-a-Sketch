@@ -6,7 +6,7 @@ https://github.com/brrrrdy/Etch-a-Sketch
 
 ## OVERVIEW
 
-A browser-based 'Etch-a-Sketch' game built as part of The Odin Project curriculum, designed to practise and demonstrate DOM manipulation with vanilla JavaScript.
+A browser-based 'Etch-a-Sketch' game built as part of The Odin Project curriculum, designed to practice with and demonstrate DOM manipulation with vanilla JavaScript.
 
 The core mechanic is a hoverable grid that leaves a pixelated trail as you move your mouse across it — somewhere between an Etch-A-Sketch and a sketchpad.
 
